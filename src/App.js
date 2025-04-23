@@ -54,14 +54,13 @@ function App() {
         </div>
       </section>
 
-      
       <section className="projects-section">
         <div className="projects-header">
           <h2>Featured Work</h2>
         </div>
         <div className="project-list">
           <div className="project-card">
-            <img src="/movelog.jpg" alt="MoveLog" />
+            <img src="/Movelog.png" alt="MoveLog" />
             <h3>MoveLog</h3>
             <p>A project tracking daily movement.</p>
           </div>
@@ -78,7 +77,6 @@ function App() {
         </div>
       </section>
 
-    
       <section className="contact-section">
         <h2>Let’s build something amazing together!</h2>
         <div className="contact-buttons">
@@ -87,7 +85,6 @@ function App() {
         </div>
       </section>
 
-     
       <footer className="footer">
         <div className="footer-bar">
           <p>&copy; 2025 Ashley. All rights reserved.</p>
