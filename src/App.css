@@ -1,12 +1,10 @@
 /* src/App.css */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
   background: #eff1f1de;
   color: #333;
 }
-
-
 
 .top-section {
   display: flex;
@@ -14,7 +12,7 @@ body {
   align-items: center;
   padding: 30px 20px;
   margin-bottom: 0;
-  background: #f3f4f4cc;
+  background: #f3f4f420;
   position: relative;
   z-index: 2;
   overflow: hidden;
@@ -27,7 +25,7 @@ body {
   display: flex;
   align-items: center;
   box-shadow: none;
-  border: 1px solid #dcd8d8e9;
+  border: 1px solid #e8e5e5b0;
 }
 
 .email-box {
@@ -43,6 +41,7 @@ body {
 
 .email-box button {
   font-size: 15px;
+  font-family: 'Nunito', sans-serif;
   padding: 5px 12px;
   background-color: white;
   border: none;
@@ -92,7 +91,7 @@ body {
   margin: 10px auto 0;
   line-height: 1.6;
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
 }
 .intro-section h1 {
   margin-left: 310px;
@@ -107,11 +106,10 @@ body {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 0 4px #ffffff;
 }
 
-
 .skills-section {
-  margin-top: -40px;
+  margin-top: -10px;
   background-color: #ffffff;
-  padding: 70px 60px;
+  padding: 60px 60px;
   position: relative;
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px;
@@ -127,18 +125,22 @@ body {
 
 .skills-track span {
   flex-shrink: 0;
-  font-size: 22px;
+  font-family: "Monoton", cursive;
+  font-size: 25px;
   font-weight: bold;
   color: #000;
   white-space: nowrap;
   margin: 0 40px;
 }
 
+
 .skills-scroll {
   overflow: hidden;
   width: 100%;
   position: relative;
 }
+
+
 
 .skills-section::before {
   content: none;
@@ -231,7 +233,6 @@ body {
   margin-top: 0;
   padding: 20px;
   background-color: #ffffff;
- 
 }
 
 .footer-bar {
@@ -258,7 +259,6 @@ body {
   background-color: #ccc;
   margin: 0 40px; /* 左右留白40px，你可以改为20px或60px */
 }
-
 
 .white-bg {
   background-color: #ffffff !important;
