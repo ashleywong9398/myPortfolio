@@ -1,8 +1,30 @@
-// src/App.js
+import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import profilePic from "./profile.jpg";
 
 function App() {
+  const [copiedTop, setCopiedTop] = useState(false);
+  const [copiedBottom, setCopiedBottom] = useState(false);
+  const scrollRef = useRef(null);
+  const scrollSpeedRef = useRef(0.5); // 使用 useRef 保存 scrollSpeed
+
+  useEffect(() => {
+    let animationId;
+    const scroll = () => {
+      if (scrollRef.current) {
+        scrollRef.current.scrollLeft += scrollSpeedRef.current;
+        const maxScroll =
+          scrollRef.current.scrollWidth / 2 + scrollRef.current.offsetWidth;
+        if (scrollRef.current.scrollLeft >= maxScroll) {
+          scrollRef.current.scrollLeft = 0;
+        }
+      }
+      animationId = requestAnimationFrame(scroll);
+    };
+    animationId = requestAnimationFrame(scroll);
+    return () => cancelAnimationFrame(animationId);
+  }, []);
+
   return (
     <div className="container">
       <header className="top-section">
@@ -10,11 +32,13 @@ function App() {
           <div className="email-box">
             <span className="email-text">ashley59398@gmail.com</span>
             <button
-              onClick={() =>
-                navigator.clipboard.writeText("Ashley59398@gmail.com")
-              }
+              onClick={() => {
+                navigator.clipboard.writeText("ashley59398@gmail.com");
+                setCopiedTop(true);
+                setTimeout(() => setCopiedTop(false), 2000);
+              }}
             >
-              Copy
+              {copiedTop ? "Copied!" : "Copy"}
             </button>
           </div>
         </div>
@@ -38,17 +62,29 @@ function App() {
       </main>
 
       <section className="skills-section">
-        <div className="skills-scroll">
-          <div className="skills-track">
+        <div
+          className="skills-scroll-react"
+          ref={scrollRef}
+          style={{ display: "flex", overflow: "hidden", whiteSpace: "nowrap" }}
+        >
+          <div className="skills-content" style={{ display: "flex" }}>
             <span>JavaScript</span>
             <span>Git</span>
             <span>Jira</span>
             <span>React</span>
             <span>HTML</span>
             <span>CSS</span>
-            <span>Frontend</span>
-            <span>GitHub</span>
             <span>Angular</span>
+            <span>GitHub</span>
+            <span>SVN</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>Jira</span>
+            <span>React</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Angular</span>
+            <span>GitHub</span>
             <span>SVN</span>
           </div>
         </div>
@@ -80,8 +116,16 @@ function App() {
       <section className="contact-section">
         <h2>Let’s build something amazing together!</h2>
         <div className="contact-buttons">
-          <button>Email Me</button>
-          <button>WhatsApp</button>
+          <button
+            onClick={() => {
+              navigator.clipboard.writeText("ashley59398@gmail.com");
+              setCopiedBottom(true);
+              setTimeout(() => setCopiedBottom(false), 2000);
+            }}
+          >
+            {copiedBottom ? "Copied!" : "Email Me"}
+          </button>
+          <button>View Resume</button>
         </div>
       </section>
 

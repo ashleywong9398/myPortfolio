@@ -1,7 +1,7 @@
 /* src/App.css */
 body {
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   background: #eff1f1de;
   color: #333;
 }
@@ -41,7 +41,7 @@ body {
 
 .email-box button {
   font-size: 15px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   padding: 5px 12px;
   background-color: white;
   border: none;
@@ -93,9 +93,11 @@ body {
   text-align: left;
   font-size: 20px;
 }
+
 .intro-section h1 {
   margin-left: 310px;
 }
+
 .avatar {
   width: 130px;
   height: 130px;
@@ -107,9 +109,10 @@ body {
 }
 
 .skills-section {
-  margin-top: -10px;
+  margin-top: 0px;
   background-color: #ffffff;
-  padding: 60px 60px;
+  padding: 60px 0px;
+  overflow: hidden;
   position: relative;
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px;
@@ -117,42 +120,30 @@ body {
   box-sizing: border-box;
 }
 
-.skills-track {
-  display: flex;
-  gap: 60px;
-  animation: scrollLoop 25s linear infinite;
+
+.skills-scroll-react {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100vw;
+  background-color: #ffffff;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
 }
 
-.skills-track span {
+.skills-content {
+  display: inline-flex;
+}
+
+.skills-content span {
   flex-shrink: 0;
+  font-size: 28px;
   font-family: "Monoton", cursive;
-  font-size: 25px;
   font-weight: bold;
   color: #000;
+  margin: 0 80px;
+  flex-shrink: 0;
   white-space: nowrap;
-  margin: 0 40px;
-}
-
-
-.skills-scroll {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-
-
-.skills-section::before {
-  content: none;
-}
-
-@keyframes scrollLoop {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 
 .projects-section {
@@ -206,7 +197,8 @@ body {
 }
 
 .contact-section h2 {
-  font-size: 32px;
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -221,6 +213,7 @@ body {
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
+  font-family: "Nunito", sans-serif;
 }
 
 .contact-buttons button:nth-child(2) {
@@ -231,6 +224,7 @@ body {
 
 .footer {
   margin-top: 0;
+  font-size: 13px;
   padding: 20px;
   background-color: #ffffff;
 }
@@ -257,7 +251,7 @@ body {
   display: block;
   height: 1px;
   background-color: #ccc;
-  margin: 0 40px; /* 左右留白40px，你可以改为20px或60px */
+  margin: 0 40px;
 }
 
 .white-bg {
