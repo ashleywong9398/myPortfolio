@@ -52,9 +52,9 @@ function ContactPage() {
         <h2
           style={{ textAlign: "center", fontSize: "34px", fontWeight: "bold", marginTop: "-10px" }}
         >
-          I know you want say something to me
+          Let’s connect 
         </h2>
-        <p style={{ textAlign: "center"}}>leave a comment please 😃</p>
+        <p style={{ textAlign: "center"}}>your message is always welcome. </p>
         <form onSubmit={handleSubmit} className="contact-form">
           <div
             style={{
