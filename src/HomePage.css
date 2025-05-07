@@ -183,14 +183,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 80px;
+  gap: 70px;
   padding: 20px;
 }
 
 .project-card {
 
-  flex: 0 0 400; 
-  max-width: 400px;
+  flex: 0 0 380; 
+  max-width: 380px;
   background: #fff;
   border-radius: 12px;
   padding: 16px;
@@ -212,7 +212,11 @@ body {
   font-size: 14px;
 }
 
-
+@media screen and (max-width: 768px) {
+  .project-card {
+    max-width: 90%;  
+  }
+}
 
 
 .contact-section {
