@@ -64,8 +64,6 @@ function HomePage() {
           <p>
           I love designing clean, easy-to-use websites. I'm especially into layout and UI details that make everything feel just right. I'm hoping to work on projects where thoughtful design really makes a difference.
           It’s something I truly enjoy doing.
-
-
           </p>
         </div>
       </main>
