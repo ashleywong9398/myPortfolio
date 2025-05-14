@@ -32,7 +32,8 @@ function BlogPage() {
           <span>/</span>
           <Link to="/contact">Contact</Link>
           <span>/</span>
-          <Link to="#">Resume</Link>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+
         </div>
       </header>
 
@@ -44,11 +45,8 @@ function BlogPage() {
         <h3 style={{ textAlign: "center", marginTop: "10px" }}>
           What This Blog Is About
         </h3>
-        <p style={{ maxWidth: "800px", margin: "10px auto", textAlign: "center" }}>
-          Hello and welcome! This blog is a little story about how I brought my personal portfolio
-          website to life. It’s not a fancy tutorial, just a simple walk-through of the steps I took
-          — kind of like a recipe or a hair-dye guide, but for websites! I’m a mom, a learner, and
-          someone who enjoys turning ideas into pages. Here’s how it all started…
+        <p style={{ maxWidth: "900px", margin: "10px auto", textAlign: "center" }}>
+        This blog is a short story about how I built my personal portfolio — and why I love UI design. I enjoy creating clean, user-friendly layouts, and it's something I'm not only passionate about, but also good at. My portfolio reflects that — thoughtful structure, visual balance, and attention to detail.
         </p>
       </main>
 
@@ -104,16 +102,16 @@ function BlogPage() {
     <div className="step-text">
       <h3>Designing the Rounded Edges</h3>
       <p>
-        The part that took me the longest—and also became my favorite—was designing the rounded edges between sections.
+      One of the most time-consuming — and most meaningful — parts of this project was designing the rounded edges between sections.
       </p>
       <p>
-        I wanted the layout to feel soft and smooth, not too stiff or overly complex. At first, I tried adding a curve to the bottom of the first module, but it didn’t show because the background blended in.
+      It may look simple, but this small detail mattered to me. I wanted the layout to feel soft, natural, and visually smooth — not blocky or mechanical. At first, I tried adding a curved shape to the bottom of a section, but it disappeared because the background didn’t contrast enough.
       </p>
       <p>
-        After some thinking, I figured out a solution: using two background layers to create the effect I wanted without affecting the rest of the layout.
+      After experimenting, I found a clean solution: layering backgrounds to create depth and separation without breaking the layout. It wasn’t a hard coding problem — it was a UI design challenge about how to guide the eye and shape the feel.
       </p>
       <p>
-        It wasn’t a technical challenge, but finding that simple idea—and seeing it work—was incredibly satisfying.
+      Solving that, in a subtle and elegant way, was one of the most satisfying moments in the whole project.
       </p>
     </div>
 
@@ -129,12 +127,14 @@ function BlogPage() {
       
       <section className="contact-section">
         <h2>Final Thoughts</h2>
-        <p style={{ maxWidth: "800px", margin: "0 auto", fontSize: "18px",fontFamily: "'Nunito', sans-serif"}}>
-          This portfolio may not be perfect, but it’s mine. It reflects what I’ve learned and how far
-          I’ve come. And even after long workdays, I still enjoy building, fixing, and improving it—
-          because this is something I truly love doing. <br />
+        <p style={{ maxWidth: "900px", margin: "0 auto", fontSize: "18px",fontFamily: "'Nunito', sans-serif"}}>
+        This portfolio reflects my style, my growth, and the kind of work I enjoy doing. I’ve put care into every page — from layout to details — and I’m proud of how it turned out.
+
+Even after long days of work and parenting, I still find energy and joy in building and improving it. That’s how I know I’m on the right path.
+
+I love what I do — and when you love it, progress comes naturally.<br />
           <br />
-          Thanks for reading my little portfolio journey!
+          Thanks for reading my little portfolio journey! I’m just getting started.
         </p>
       </section>
 

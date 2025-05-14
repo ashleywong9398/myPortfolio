@@ -50,7 +50,8 @@ function HomePage() {
           <span>/</span>
           <Link to="/contact">Contact</Link>
           <span>/</span>
-          <Link to="#">Resume</Link>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+
         </div>
       </header>
 
