@@ -1,4 +1,4 @@
-// HomePage.js
+
 import React, { useState, useRef, useEffect } from "react";
 import profilePic from "./profile.jpg";
 import { Link } from "react-router-dom";
@@ -225,6 +225,7 @@ function HomePage() {
       <footer className="footer">
         <div className="footer-bar">
           <p>&copy; 2025 Ashley. All rights reserved.</p>
+        
           <div className="footer-links">
             <Link to="#">Home</Link>
             <Link to="/blog">Blog</Link>
