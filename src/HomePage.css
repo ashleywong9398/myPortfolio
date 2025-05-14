@@ -71,9 +71,7 @@ body {
   overflow: visible;
   z-index: 1;
   box-sizing: border-box;
-  max-width: 1450px;
-  width: 100%;   
-  margin: 0 auto;
+  
   
 }
 

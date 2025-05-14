@@ -72,6 +72,7 @@ body {
   overflow: visible;
   z-index: 1;
   box-sizing: border-box;
+ 
 }
 
 .intro-section::after {
