@@ -71,6 +71,7 @@ body {
   overflow: visible;
   z-index: 1;
   box-sizing: border-box;
+  
 }
 
 .intro-section::after {
@@ -86,12 +87,18 @@ body {
   z-index: -1;
 }
 
+
+.intro-text {
+  max-width: 900px;
+  margin: 10px auto;
+  padding: 0 20px;
+}
 .intro-section p {
-  max-width: 800px;
+  max-width: 900px;
   margin: 10px auto 0;
-  line-height: 1.6;
+  line-height: 1.8;
   text-align: left;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 
@@ -107,12 +114,6 @@ body {
 }
 
 
-.intro-text {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: left;
-}
 
 .avatar {
   width: 130px;

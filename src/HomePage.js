@@ -62,9 +62,10 @@ function HomePage() {
         <div className="intro-text">
           <h1>Hi, I'm Ashley!</h1>
           <p>
-            I'm a product designer specializing in UI design, web functionality, and desktop
-            support. I craft intuitive interfaces and ensure seamless user experiences across
-            platforms.
+          I love designing clean, easy-to-use websites. I'm especially into layout and UI details that make everything feel just right. I'm hoping to work on projects where thoughtful design really makes a difference.
+          It’s something I truly enjoy doing.
+
+
           </p>
         </div>
       </main>
