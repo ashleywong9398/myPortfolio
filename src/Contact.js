@@ -49,7 +49,7 @@ function ContactPage() {
         </div>
       </header>
 
-      <div style={{ backgroundColor: "#eff1f1de", padding: "60px 20px" }}>
+      <div style={{ backgroundColor: "#f1f4f4de", padding: "60px 20px" }}>
         <h2
           style={{ textAlign: "center", fontSize: "34px", fontWeight: "bold", marginTop: "-10px" }}
         >
@@ -87,7 +87,7 @@ function ContactPage() {
               required
               style={{
                 width: "100%",
-                maxWidth: "545px",
+                maxWidth: "560px",
                 padding: "8px",
                 borderRadius: "6px",
                 border: "1px solid #ccc",
@@ -125,7 +125,7 @@ function ContactPage() {
               required
               style={{
                 width: "100%",
-                maxWidth: "545px",
+                maxWidth: "560px",
                 padding: "8px",
                 borderRadius: "6px",
                 border: "1px solid #ccc",
@@ -140,45 +140,48 @@ function ContactPage() {
         style={{
           borderTopLeftRadius: "80px",
           borderTopRightRadius: "80px",
-          padding: "60px 20px 100px",
+          padding: "38px 20px 100px",
         }}
       >
-        <form onSubmit={handleSubmit} className="form-bottom">
-          <label style={{ fontWeight: "bold" }}>
-            Leave something here
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              rows="5"
-              required
-              style={{
-                width: "100%",
-                maxWidth: "600px",
-                padding: "10px",
-                borderRadius: "6px",
-                border: "1px solid #ccc",
-                marginTop: "8px",
-              }}
-            />
-          </label>
+    <form onSubmit={handleSubmit} className="form-bottom" style={{ maxWidth: "630px", margin: "0 auto" }}>
+  <div style={{ marginBottom: "10px" }}>
+    <label htmlFor="message" style={{ fontWeight: "bold", display: "block", marginBottom: "9px" }}>
+      Leave something here:
+    </label>
+    <textarea
+      id="message"
+      name="message"
+      value={formData.message}
+      onChange={handleChange}
+      rows="5"
+      required
+      style={{
+        width: "100%",
+        padding: "10px",
+        borderRadius: "6px",
+        border: "1px solid #ccc",
+        fontSize: "16px",
+      }}
+    />
+  </div>
 
-          <button
-            type="submit"
-            style={{
-              marginTop: "20px",
-              padding: "10px 30px",
-              backgroundColor: "#333",
-              color: "#fff",
-              border: "none",
-              borderRadius: "6px",
-              fontWeight: "bold",
-              cursor: "pointer",
-            }}
-          >
-            submit
-          </button>
-        </form>
+  <button
+    type="submit"
+    style={{
+      marginTop: "20px",
+      padding: "10px 30px",
+      backgroundColor: "#333",
+      color: "#fff",
+      border: "none",
+      borderRadius: "6px",
+      fontWeight: "bold",
+      cursor: "pointer",
+    }}
+  >
+    Submit
+  </button>
+</form>
+
       </section>
 
       <footer className="footer">
