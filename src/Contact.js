@@ -50,12 +50,19 @@ function ContactPage() {
       </header>
 
       <div style={{ backgroundColor: "#f1f4f4de", padding: "60px 20px" }}>
-        <h2
-          style={{ textAlign: "center", fontSize: "34px", fontWeight: "bold", marginTop: "-10px" }}
-        >
-          Let’s connect 
-        </h2>
-        <p style={{ textAlign: "center"}}>your message is always welcome. </p>
+      <h2
+  style={{
+    textAlign: "center",
+    fontSize: "34px",
+    fontWeight: "bold",
+    marginTop: "-10px",
+    fontFamily: "Nunito, sans-serif", 
+  }}
+>
+  Let’s connect
+</h2>
+        <p style={{ textAlign: "center",
+    fontFamily: "Nunito, sans-serif",}}>your message is always welcome. </p>
         <form onSubmit={handleSubmit} className="contact-form">
           <div
             style={{
@@ -74,6 +81,7 @@ function ContactPage() {
                 marginRight: "10px",
                 lineHeight: "32px",
                 fontWeight: "bold",
+                fontFamily: "Nunito, sans-serif",
               }}
             >
               Name:
@@ -112,6 +120,7 @@ function ContactPage() {
                 marginRight: "10px",
                 lineHeight: "32px",
                 fontWeight: "bold",
+                fontFamily: "Nunito, sans-serif",
               }}
             >
               Email:
@@ -176,6 +185,7 @@ function ContactPage() {
       borderRadius: "6px",
       fontWeight: "bold",
       cursor: "pointer",
+      fontFamily: "Nunito, sans-serif",
     }}
   >
     Submit

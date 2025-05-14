@@ -1,5 +1,6 @@
 
 .form-top input {
+  font-family: "Nunito", sans-serif;
   margin-top: 10px;
   padding: 8px 14px;
   font-size: 16px;
@@ -10,6 +11,7 @@
 }
 
 .contact-main {
+  font-family: "Nunito", sans-serif;
   background-color: #ffffff;
   padding: 60px 20px 100px;
   border-top-left-radius: 80px;
@@ -19,6 +21,7 @@
 
 
 .form-bottom label {
+  font-family: "Nunito", sans-serif;
   display: block;
   font-size: 18px;
   text-align: left;
@@ -34,6 +37,7 @@
 }
 
 .form-bottom button {
+  font-family: "Nunito", sans-serif;
   margin-top: 20px;
   padding: 10px 30px;
   background-color: #333;
