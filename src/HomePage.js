@@ -214,11 +214,17 @@ function HomePage() {
           >
             {copiedBottom ? "Copied!" : "Email Me"}
           </button>
-          <Link to="/contact" className="contact-link-button">
-            Get in Touch
-          </Link>
+          <Link
+          to="/contact"
+          className="contact-link-button"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+          Get in Touch
+        </Link>
+
         </div>
       </section>
+
      <footer className="footer">
              <div className="footer-bar">
                <p>&copy; 2025 Ashley. All rights reserved.</p>
