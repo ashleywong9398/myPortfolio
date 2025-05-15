@@ -143,9 +143,9 @@ I love what I do — and when you love it, progress comes naturally.<br />
         <div className="footer-bar">
           <p>&copy; 2025 Ashley. All rights reserved.</p>
           <div className="footer-links">
-            <Link to="/">Home</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/contact">Contact</Link>
+          <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</Link>
+          <Link to="/blog" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Blog</Link>
+          <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Contact</Link>
           </div>
         </div>
       </footer>
