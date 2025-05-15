@@ -12,7 +12,7 @@ function HomePage() {
 
   useEffect(() => {
     const scrollContainer = skillsRef.current;
-    const scrollSpeed = 0.2;
+    const scrollSpeed = 0.4;
     function step() {
       if (!scrollContainer) return;
       positionRef.current += scrollSpeed;
